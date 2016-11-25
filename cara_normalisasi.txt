@@ -1,0 +1,24 @@
+If you want to normalize to [x, y], first normalize to [0, 1] via:
+
+ range = max(a) - min(a);
+ a = (a - min(a)) / range;
+
+Then scale to [x,y] via:
+
+ range2 = y - x;
+ a = (a*range2) + x;
+
+Putting it all together:
+
+ function normalized = normalize_var(array, x, y)
+
+     # Normalize to [0, 1]:
+     m = min(array);
+     range = max(array) - m;
+     array = (array - m) / range;
+
+     # Then scale to [x,y]:
+     range2 = y - x;
+     normalized = (array*range2) + x;
+
+
