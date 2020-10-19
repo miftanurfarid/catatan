@@ -1,20 +1,20 @@
 ##### install driver
 
-`pacman -S xf86-input-wacom
+pacman -S xf86-input-wacom
 
-`systemctl restart display-manager
+systemctl restart display-manager
 
 
 ##### get id
 
-`xsetwacom list devices
+xsetwacom list devices
 
 
 ##### config
 
-`xsetwacom set <id> mode relative
+xsetwacom set <id> mode relative
 
-`xsetwacom set <id> area -15000 0 15000 20000
+xsetwacom set <id> area -15000 0 15000 20000
 
 
 ##### permanent configuration
@@ -36,7 +36,7 @@ Section "InputClass"
 	Option "TopY" 0
 	Option "BottomX" -15000
 	Option "BottomY" 20000
-	"CursorProx" 10
+	Option "CursorProx" 10
 EndSection
 
 Section "InputClass"
