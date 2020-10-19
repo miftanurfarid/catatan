@@ -32,11 +32,11 @@ Section "InputClass"
 	MatchProduct "Pen"
 	NoMatchProduct "eraser"
 	Option "Mode" "Relative"
-	Option "TopX" -15000
-	Option "TopY" 0
-	Option "BottomX" -15000
-	Option "BottomY" 20000
-	Option "CursorProx" 10
+	Option "TopX" "0"
+	Option "TopY" "0"
+	Option "BottomX" "30000"
+	Option "BottomY" "20000"
+	Option "CursorProx" "10"
 EndSection
 
 Section "InputClass"
