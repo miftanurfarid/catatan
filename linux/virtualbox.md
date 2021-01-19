@@ -9,22 +9,22 @@ modprobe -a vboxdrv
 
 #### Disable time sync from guest
 
-/etc/init.d/vboxadd-service stop
+    `/etc/init.d/vboxadd-service stop
 
 #### Enable time sync from guest
 
-/etc/init.d/vboxadd-service start
+    `/etc/init.d/vboxadd-service start
 
 ### From Host
 
 #### Disable time sync from host
 
-VBoxManage setextradata "<vm-name>" VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled 1
+    `VBoxManage setextradata "<vm-name>" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
 
 Restart VM
 
 #### Enable time sync from host
 
-VBoxManage setextradata "<vm-name>" VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled 0
+    `VBoxManage setextradata "<vm-name>" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 0
 
 Restart VM
