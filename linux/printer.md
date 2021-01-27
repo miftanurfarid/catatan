@@ -1,0 +1,1 @@
+sudo system-config-printer
