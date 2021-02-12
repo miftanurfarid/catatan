@@ -9,3 +9,10 @@
 3. Save your settings.json file
 
 4. Now, when you open a Matlab document (.m), VS Code displays warnings and errors.
+
+
+## error: /usr/lib/octave/6.1.0/oct/x86_64-pc-linux-gnu/__init_fltk__.oct: failed to load: libfltk_gl.so.1.3: cannot open shared object file: No such file or directory
+
+1. I was able to fix this by installing fltk with
+
+		sudo pacman -S fltk
