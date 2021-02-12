@@ -4,7 +4,7 @@
 
 2. On the right pane, where you have the settings.json file open, add to the json file.
 
-		`matlab.mlintpath" : "path to your mlint.exe file
+		matlab.mlintpath" : "path to your mlint.exe file
 
 3. Save your settings.json file
 
