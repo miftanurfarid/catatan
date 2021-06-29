@@ -10,8 +10,8 @@
 
 3. `makepkg -sir`
 
-4. Go to file -> Preference -> Settings on your Visual Studio Code
+4. Go to `File -> Preference -> Settings` on your Visual Studio Code
 
-5. Set Terminal>Integrated:Font Family to `MesloLGM Nerd Font`
+5. Set `Terminal>Integrated:Font Family` to `MesloLGM Nerd Font`
 
 6. Restart vscode
