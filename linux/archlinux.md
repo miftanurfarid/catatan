@@ -13,3 +13,13 @@
 # Double quote keys and @
 
 1. 'setxkbmap -layout us'
+
+# Google Chrome
+
+1. `sudo pacman -S --needed base-devel git`
+
+2. `git clone https://aur.archlinux.org/google-chrome.git`
+
+3. `cd google-chrome`
+
+4. `makepkg -si`
