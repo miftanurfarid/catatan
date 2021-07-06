@@ -9,3 +9,7 @@
 4. stop after downloading finished / choose `n` for installation
 
 5. install via pacman: `sudo pacman -S <package-name>`
+
+# Double quote keys and @
+
+1. 'setxkbmap -layout us'
