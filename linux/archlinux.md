@@ -90,3 +90,4 @@
 1. `pamac build light-locker-settings`
 
 1. set delay to 1 sec
+
