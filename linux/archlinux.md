@@ -1,4 +1,12 @@
-# Downgrade package
+# Catatan Selama Menggunakan Arch Linux
+
+## Remove unused dependencies
+
+1. List all orphans: `pacman -Qdt`
+
+2. Remove them all: `pacman -Rsn $(pacman -Qdtq)`
+
+## Downgrade package
 
 1. `https://aur.archlinux.org/packages/downgrade/`
 
@@ -10,11 +18,11 @@
 
 5. install via pacman: `sudo pacman -S <package-name>`
 
-# Double quote keys and @
+## Double quote keys and @
 
 1. 'setxkbmap -layout us'
 
-# Google Chrome
+## Google Chrome
 
 1. `sudo pacman -S --needed base-devel git`
 
@@ -24,7 +32,7 @@
 
 4. `makepkg -si`
 
-# Light Locker
+## Light Locker
 
 1. `pacman -S xfce4-screensaver`
 
@@ -91,3 +99,16 @@
 
 1. set delay to 1 sec
 
+## Enable emoji fonts
+
+1. Available fonts
+
+    Use any font from the table below, available from a variety of sources —
+
+
+    **Package** | **Source** | **Font name**
+    --- | --- | ---
+    noto-fonts-emoji | Official / Extra | Noto Color Emoji
+    ttf-twemoji | AUR | Twemoji
+    otf-openmoji | AUR | OpenMoji
+    ttf-joypixels | Official / Community | JoyPixels
