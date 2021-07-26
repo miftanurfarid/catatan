@@ -21,6 +21,12 @@ xsetwacom set <id> area -15000 0 15000 20000
 
 grep "Using input driver 'wacom'" /var/log/Xorg.0.log
 
+```
+[  5362.130] (II) Using input driver 'wacom' for 'Wacom One by Wacom S Pen'
+[  5362.747] (II) Using input driver 'wacom' for 'Wacom One by Wacom S Pen eraser'
+
+```
+
 pluma /usr/share/X11/xorg.conf.d/70-wacom.conf
 
 sesuai keluaran dari Xorg.0.log
