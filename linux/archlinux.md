@@ -1,5 +1,15 @@
 # Catatan Selama Menggunakan Arch Linux
 
+## you-dont-have-path-in-your-path-gem-executables-will-not-run
+
+1. `export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"`
+
+2. `export PATH="$PATH:$GEM_HOME/bin"`
+
+3. `gem list`
+
+4. `gem update`
+
 ## Remove unused dependencies
 
 1. List all orphans: `pacman -Qdt`
