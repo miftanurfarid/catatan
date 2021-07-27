@@ -4,4 +4,4 @@ or
 
 `sudo geany /opt/spotify/spotify.desktop`
 
-change `Exec=spotify %U` to `Exec=spotify -no-zygote`
+change `Exec=spotify %U` to `Exec=spotify %U --no-zygote`
