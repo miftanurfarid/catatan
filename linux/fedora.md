@@ -18,3 +18,18 @@
 3. `sudo grub2-mkconfig -o /etc/grub2-efi.cfg`
 
 4. `reboot`
+
+
+# Enable RPM Fusion
+
+1. To enable the Free repository, use:
+    
+    ```
+    sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+    ```
+
+2. Optionally, enable the Nonfree repository:
+
+    ```
+    sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+    ```
