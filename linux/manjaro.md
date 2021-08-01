@@ -52,9 +52,9 @@
 
 # Install Spaceship Theme
 
-1. git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+1. `git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1`
 
-1. ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+1. `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"`
 
 1. Set `ZSH_THEME="spaceship"` in your `.zshrc`.
 
@@ -82,4 +82,8 @@
 		"terminal.integrated.lineHeight": 1.1
 	}
     ```
+
+# Install libreoffice
+
+1. `sudo pacman -S libreoffice-still`
 
