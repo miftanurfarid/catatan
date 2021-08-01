@@ -33,3 +33,7 @@
     ```
     sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     ```
+
+# Disable ksshaskpass in Fedora 34 KDE
+
+1. add `unset SSH_ASKPASS` in `.bashrc`
