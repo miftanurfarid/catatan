@@ -87,3 +87,14 @@
 
 1. `sudo pacman -S libreoffice-still`
 
+# Install Telegram
+
+1. `sudo pacman -S telegram-desktop`
+
+# Install Rclone
+
+1. `sudo pacman -S rclone`
+
+# Install Texlive + Texstudion
+
+1. `sudo pacman -S texlive-most texstudio`

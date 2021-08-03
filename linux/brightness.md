@@ -14,4 +14,4 @@
 
     2. add parameter `acpi_backlight=video` or `acpi_backlight=vendor` or `acpi_backlight=native` then save
 
-    3. `sudo update-grub`
+    3. `sudo update-grub` or `grub2-mkconfig -o /boot/grub2/grub.cfg`
