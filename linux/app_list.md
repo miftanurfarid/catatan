@@ -19,3 +19,4 @@ telegram desktop
 tor browser
 xournal
 qpdfview
+packettracer
