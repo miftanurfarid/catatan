@@ -2,21 +2,25 @@ latex
 lyx
 octave
 spyder
+jupyterlab
 discord
 git
-github desktop
-google chrome
+github-desktop
+google-chrome
 htop
 inkscape
 libreoffice
-mendeley desktop
-wps office
-super productivity
+mendeley-desktop
+wps-office
+superproductivity
 texstudio
 playonlinux
-publish or perish
-telegram desktop
-tor browser
+publish-or-perish
+telegram-desktop
+tor-browser
 xournal
 qpdfview
 packettracer
+okular
+gimp
+zoom
