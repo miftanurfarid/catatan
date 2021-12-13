@@ -2,6 +2,7 @@ latex
 lyx
 octave
 spyder
+python3-pip
 jupyterlab
 discord
 git
@@ -14,8 +15,6 @@ mendeley-desktop
 wps-office
 superproductivity
 texstudio
-playonlinux
-publish-or-perish
 telegram-desktop
 tor-browser
 xournal
@@ -24,3 +23,5 @@ packettracer
 okular
 gimp
 zoom
+playonlinux
+publish-or-perish
