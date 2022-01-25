@@ -12,6 +12,7 @@ htop
 inkscape
 libreoffice
 mendeley-desktop
+onlyoffice
 wps-office
 superproductivity
 texstudio
