@@ -26,3 +26,6 @@ gimp
 zoom
 playonlinux
 publish-or-perish
+spotify
+vscode
+
