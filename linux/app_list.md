@@ -12,6 +12,7 @@ htop
 inkscape
 libreoffice
 mendeley-desktop
+onlyoffice
 wps-office
 superproductivity
 texstudio
@@ -25,3 +26,6 @@ gimp
 zoom
 playonlinux
 publish-or-perish
+spotify
+vscode
+
