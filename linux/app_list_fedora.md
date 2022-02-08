@@ -1,3 +1,33 @@
+echo 'fastestmirror=true' | sudo tee -a /etc/dnf/dnf.conf
+
+echo 'max_parallel_downloads=5' | sudo tee -a /etc/dnf/dnf.conf
+
+echo 'deltarpm=true' | sudo tee -a /etc/dnf/dnf.conf
+
+sudo dnf upgrade --refresh
+
+sudo dnf check
+
+sudo dnf autoremove
+
+sudo dnf update
+
+sudo reboot
+
+sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf upgrade --refresh
+
+sudo dnf groupupdate core
+
+sudo dnf install -y rpmfusion-free-release-tainted
+
+sudo dnf install -y dnf-plugins-core
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo flatpak update
+
 sudo dnf install texlive-scheme-basic lyx octave python3-spyder python3.9 git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 okular gimp playonlinux podman cheese
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
