@@ -28,7 +28,7 @@ sudo dnf install -y dnf-plugins-core
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo flatpak update
 
-sudo dnf install texlive-scheme-basic lyx octave python3-spyder python3.9 git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 okular gimp playonlinux podman telegram-desktop
+sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder python3.9 git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 okular gimp playonlinux podman telegram-desktop
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -36,7 +36,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 sudo dnf check-update
 
-sudo dnf install code
+sudo dnf install -y code
 
 wget https://dl.google.com/linux/linux_signing_key.pub
 
@@ -44,4 +44,4 @@ sudo rpm --import linux_signing_key.pub
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
-sudo dnf install google-chrome-stable_current_x86_64.rpm
+sudo dnf -y install google-chrome-stable_current_x86_64.rpm
