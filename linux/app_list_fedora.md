@@ -28,7 +28,7 @@ sudo dnf install -y dnf-plugins-core
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo flatpak update
 
-sudo dnf install texlive-scheme-basic lyx octave python3-spyder python3.9 git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 okular gimp playonlinux podman cheese
+sudo dnf install texlive-scheme-basic lyx octave python3-spyder python3.9 git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 okular gimp playonlinux podman telegram-desktop
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
