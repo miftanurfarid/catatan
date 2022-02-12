@@ -39,3 +39,5 @@ sudo dnf install google-chrome-stable_current_x86_64.rpm
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo flatpak update
 
 flatpak install flathub io.github.shiftey.Desktop us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop
+
+pip install tensorflow librosa jupyterlab
