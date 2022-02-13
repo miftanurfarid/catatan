@@ -18,7 +18,7 @@ sudo dnf update
 
 sudo reboot
 
-sudo dnf install texlive-scheme-basic lyx octave python3-spyder python3.9 git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 okular gimp playonlinux podman texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher
+sudo dnf install texlive-scheme-basic lyx octave python3-spyder python3.9 git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 okular gimp playonlinux podman texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
