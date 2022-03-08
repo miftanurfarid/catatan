@@ -45,7 +45,7 @@ sudo dnf update
 
 sudo reboot
 
-sudo dnf install texlive-scheme-basic lyx octave python3-spyder python3.9 git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 okular gimp playonlinux podman texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel
+sudo dnf install texlive-scheme-basic lyx octave python3-spyder python3.9 git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp playonlinux podman texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel neofetch telegram-desktop
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -63,9 +63,9 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
 sudo dnf install google-chrome-stable_current_x86_64.rpm
 
-wget https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.deb
+wget https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.rpm
 
-sudo dnf install GitHubDesktop-linux-2.9.6-linux1.deb
+sudo dnf install GitHubDesktop-linux-2.9.6-linux1.rpm
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo flatpak update
 
