@@ -1,52 +1,33 @@
-<<<<<<< HEAD
-1. `sudo zypper refresh`
+sudo zypper refresh
 
-1. `sudo zypper update`
+sudo zypper update
 
-1. `sudo zypper ar -cfp 90 https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman`
+sudo zypper install texlive-scheme-medium lyx octave spyder3 git-core htop inkscape texstudio xournal xournalpp qpdfview gimp torbrowser-launcher axel neofetch telegram-desktop playonlinux flatpak
 
-1. `sudo zypper dup --from packman --allow-vendor-change`
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
-1. `sudo zypper install zsh git git-cola neofetch telegram-desktop rclone rclone-bash-completion rclone-zsh-completion octave texstudio`
+sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode vscode
 
-1. [https://miftanurfarid.github.io/oh-my-zsh-spaceship-powerline-vscodium/](https://miftanurfarid.github.io/oh-my-zsh-spaceship-powerline-vscodium/)
+sudo zypper refresh
 
-1. Visual Studio Code
+sudo zypper install code
 
-    ```
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode vscode
-    sudo zypper refresh
-    sudo zypper install code
-    ```
+wget https://dl.google.com/linux/linux_signing_key.pub
 
-    ```
-    {
-        "terminal.integrated.defaultProfile.linux": "zsh",
-        "git.autofetch": true,
-        "terminal.integrated.automationShell.linux": "/bin/zsh",
-        "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
-        "terminal.integrated.rendererType": "canvas",
-        "terminal.integrated.fontSize": 12,
-        "terminal.integrated.lineHeight": 1.1
-    }
-    ```
-=======
-1. update local repo: `sudo zypper refresh`
+sudo rpm --import linux_signing_key.pub
 
-1. update system: `sudo zypper update`
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
-1. install git: `sudo zypper install git`
+sudo zypper install google-chrome-stable_current_x86_64.rpm
 
+wget https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.rpm
 
-1. add Packman:
+sudo zypper install GitHubDesktop-linux-2.9.6-linux1.rpm
 
-    ```
-    sudo zypper ar -cfp 90 https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
+wget https://github.com/johannesjo/super-productivity/releases/download/v7.10.1/superProductivity-7.10.1.x86_64.rpm
 
-    sudo zypper dup --from packman --allow-vendor-change
-    ```
+sudo zypper install superProductivity-7.10.1.x86_64.rpm
 
-1. Install Multimedia Codecs
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
->>>>>>> 50bbd435fe40cee02981c21dc40f79c9a8952ee2
+flatpak install flathub  us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.bit3.WhatsAppQT io.gitlab.librewolf-community
