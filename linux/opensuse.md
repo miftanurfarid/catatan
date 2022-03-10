@@ -2,7 +2,7 @@ sudo zypper refresh
 
 sudo zypper update
 
-sudo zypper install texlive-scheme-medium lyx octave spyder3 git-core htop inkscape texstudio xournal xournalpp qpdfview gimp torbrowser-launcher axel neofetch telegram-desktop playonlinux flatpak
+sudo zypper install texlive-scheme-medium lyx octave spyder3 git-core htop inkscape texstudio xournal xournalpp qpdfview gimp torbrowser-launcher axel neofetch telegram-desktop flatpak p7zip-full playonlinux 
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
