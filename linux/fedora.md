@@ -33,9 +33,9 @@ echo 'deltarpm=true' | sudo tee -a /etc/dnf/dnf.conf
 
 sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
-sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-sudo dnf upgrade --refresh
+sudo dnf upgrade -y --refresh
 
 sudo dnf check
 
@@ -45,7 +45,7 @@ sudo dnf update
 
 sudo reboot
 
-sudo dnf install texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp playonlinux podman texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel neofetch telegram-desktop kcm_wacomtablet
+sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp playonlinux podman texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel neofetch telegram-desktop kcm_wacomtablet
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
