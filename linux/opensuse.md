@@ -31,3 +31,11 @@ sudo zypper install superProductivity-7.10.1.x86_64.rpm
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 flatpak install flathub  us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.bit3.WhatsAppQT io.gitlab.librewolf-community
+
+zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_15.0/Essentials packman-essentials
+
+sudo zypper refresh
+
+sudo zypper install x264 libx265-199 libx264-161 ffmpeg gstreamer-plugins-bad gstreamer-plugins-ugly
+
+sudo zypper install gstreamer-plugins-libav
