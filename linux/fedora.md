@@ -21,7 +21,7 @@
 
 # Disable ksshaskpass in Fedora 34 KDE
 
-1. add `unset SSH_ASKPASS` in `.bashrc`
+echo 'unset SSH_ASKPASS' >> ~/.bashrc
 
 # All in One
 
@@ -45,7 +45,7 @@ sudo dnf update
 
 sudo reboot
 
-sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp playonlinux podman texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel neofetch telegram-desktop kcm_wacomtablet
+sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -69,6 +69,6 @@ sudo dnf install GitHubDesktop-linux-2.9.6-linux1.rpm
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo flatpak update
 
-flatpak install flathub  us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.bit3.WhatsAppQT io.gitlab.librewolf-community
+flatpak install flathub  us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.bit3.WhatsAppQT io.gitlab.librewolf-community org.telegram.desktop org.phoenicis.playonlinux
 
-pip3 install tensorflow librosa jupyterlab
+pip3 install tensorflow librosa jupyterlab seaborn pandas
