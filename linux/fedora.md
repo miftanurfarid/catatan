@@ -69,7 +69,7 @@ sudo dnf install GitHubDesktop-linux-2.9.6-linux1.rpm
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install -y flathub us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.bit3.WhatsAppQT io.gitlab.librewolf-community org.phoenicis.playonlinux
+flatpak install -y flathub us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.bit3.WhatsAppQT io.gitlab.librewolf-community
 
 pip3 install tensorflow librosa jupyterlab seaborn pandas
 sudo dnf install curl cabextract xorg-x11-font-utils fontconfig
