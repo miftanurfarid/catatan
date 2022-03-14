@@ -80,5 +80,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y flathub org.onlyoffice.desktopeditors io.bit3.WhatsAppQT io.gitlab.librewolf-community
 
 pip3 install tensorflow librosa jupyterlab seaborn pandas
+
 sudo dnf install curl cabextract xorg-x11-font-utils fontconfig
+
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
