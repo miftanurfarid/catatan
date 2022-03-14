@@ -67,9 +67,17 @@ wget https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/
 
 sudo dnf install GitHubDesktop-linux-2.9.6-linux1.rpm
 
+wget https://zoom.us/client/latest/zoom_x86_64.rpm
+
+sudo rpm -i zoom_x86_64.rpm
+
+https://bitwarden.com/download/
+
+https://www.wps.com/download/
+
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install -y flathub us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.bit3.WhatsAppQT io.gitlab.librewolf-community
+flatpak install -y flathub org.onlyoffice.desktopeditors io.bit3.WhatsAppQT io.gitlab.librewolf-community
 
 pip3 install tensorflow librosa jupyterlab seaborn pandas
 sudo dnf install curl cabextract xorg-x11-font-utils fontconfig
