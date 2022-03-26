@@ -8,4 +8,6 @@ sudo pacman -S texlive-most texlive-bin texlive-lang lyx texstudio xournalpp oct
 
 git clone https://aur.archlinux.org/google-chrome.git
 
+git clone https://aur.archlinux.org/github-desktop-bin.git
+
 makepkg -sir
