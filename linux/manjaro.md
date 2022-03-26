@@ -10,4 +10,12 @@ git clone https://aur.archlinux.org/google-chrome.git
 
 git clone https://aur.archlinux.org/github-desktop-bin.git
 
+git clone https://aur.archlinux.org/librewolf-bin.git
+
 makepkg -sir
+
+# Zoom
+
+Download from https://zoom.us/download?os=linux
+
+sudo pacman -U zoom_x86_64.pkg.tar.xz
