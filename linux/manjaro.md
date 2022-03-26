@@ -14,9 +14,7 @@ git clone https://aur.archlinux.org/librewolf-bin.git
 
 for librewolf: gpg --keyserver hkp://keyserver.ubuntu.com --search-keys 031F7104E932F7BD7416E7F6D2845E1305D6E801
 
-git clone https://aur.archlinux.org/onlyoffice-bin.git
-
-https://aur.archlinux.org/wps-office-cn.git
+git clone https://aur.archlinux.org/wps-office-cn.git
 
 makepkg -sir
 
