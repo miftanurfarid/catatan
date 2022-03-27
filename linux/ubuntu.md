@@ -2,7 +2,7 @@ sudo apt update
 
 sudo apt upgrade
 
-sudo apt install libreoffice texstudio git flatpak lyx octave lyx octave spyder3 htop inkscape xournal qpdfview gimp torbrowser-launcher axel neofetch vlc telegram-desktop simple-scan playonlinux python3-pip python3-notebook rclone gedit-plugin-terminal
+sudo apt install libreoffice texstudio git flatpak lyx octave lyx octave spyder3 htop inkscape xournal qpdfview gimp torbrowser-launcher axel neofetch vlc telegram-desktop simple-scan playonlinux python3-pip python3-notebook rclone gedit-plugin-terminal gedit-plugin-git
 
 axel -a https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.deb
 
