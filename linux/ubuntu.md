@@ -15,3 +15,5 @@ axel -a https://github.com/shiftkey/desktop/releases/download/release-2.9.9-linu
 sudo dpkg -i GitHubDesktop-linux-2.9.9-linux2.deb
 
 axel -a https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo dpkg -i google-chrome-stable_current_amd64.deb
