@@ -55,19 +55,19 @@ sudo dnf check-update
 
 sudo dnf install code
 
-wget https://dl.google.com/linux/linux_signing_key.pub
+axel -a https://dl.google.com/linux/linux_signing_key.pub
 
 sudo rpm --import linux_signing_key.pub
 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+axel -a https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
 sudo dnf install google-chrome-stable_current_x86_64.rpm
 
-wget https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.rpm
+axel -a https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.rpm
 
 sudo dnf install GitHubDesktop-linux-2.9.6-linux1.rpm
 
-wget https://zoom.us/client/latest/zoom_x86_64.rpm
+axel -a https://zoom.us/client/latest/zoom_x86_64.rpm
 
 sudo rpm -i zoom_x86_64.rpm
 
