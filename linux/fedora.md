@@ -87,6 +87,12 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 flatpak install -y flathub org.onlyoffice.desktopeditors io.bit3.WhatsAppQT io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
 
+git clone https://github.com/IamDH4/ttf-wps-fonts.git
+
+cd ttf-wps-fonts
+
+sudo bash install.sh
+
 pip3 install tensorflow librosa jupyterlab seaborn pandas
 
 sudo dnf install curl cabextract xorg-x11-font-utils fontconfig
