@@ -45,7 +45,7 @@ sudo dnf update
 
 sudo reboot
 
-sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre
+sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre gnome-tweaks
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -67,17 +67,25 @@ axel -a https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linu
 
 sudo dnf install GitHubDesktop-linux-2.9.6-linux1.rpm
 
+axel -a https://github.com/shiftkey/desktop/releases/download/release-2.9.9-linux2/GitHubDesktop-linux-2.9.9-linux2.rpm
+
+sudo dnf install GitHubDesktop-linux-2.9.9-linux2.rpm
+
 axel -a https://zoom.us/client/latest/zoom_x86_64.rpm
+
+ael -a https://zoom.us/linux/download/pubkey
+
+sudo rpm --import package-signing-key.pub
 
 sudo rpm -i zoom_x86_64.rpm
 
-https://bitwarden.com/download/
+bitwarden no auto-update: https://bitwarden.com/download/
 
-https://www.wps.com/download/
+wps-office no auto-update: https://www.wps.com/download/
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install -y flathub org.onlyoffice.desktopeditors io.bit3.WhatsAppQT io.gitlab.librewolf-community
+flatpak install -y flathub org.onlyoffice.desktopeditors io.bit3.WhatsAppQT io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
 
 pip3 install tensorflow librosa jupyterlab seaborn pandas
 
