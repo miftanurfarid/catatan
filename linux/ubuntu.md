@@ -40,4 +40,4 @@ vscode
 
 pip3 install numpy tensorflow librosa pandas seaborn
 
-cuda
+https://linuxhint.com/install-cuda-ubuntu/
