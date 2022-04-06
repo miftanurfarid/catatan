@@ -29,3 +29,13 @@ sudo dpkg -i onlyoffice-desktopeditors_amd64.deb
 axel -a https://github.com/bitwarden/desktop/releases/download/v1.32.1/Bitwarden-1.32.1-amd64.deb
 
 sudo dpkg -i Bitwarden-1.32.1-amd64.deb
+
+https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.8-stable_amd64.deb
+
+sudo dpkg -i mendeleydesktop_1.19.8-stable_amd64.deb
+
+packettracer
+
+vscode
+
+
