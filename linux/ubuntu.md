@@ -38,4 +38,6 @@ packettracer
 
 vscode
 
+pip3 install numpy tensorflow librosa pandas seaborn
 
+cuda
