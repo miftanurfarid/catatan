@@ -17,3 +17,15 @@ sudo dpkg -i GitHubDesktop-linux-2.9.9-linux2.deb
 axel -a https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+axel -a https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10920/wps-office_11.1.0.10920.XA_amd64.deb
+
+sudo dpkg -i wps-office_11.1.0.10920.XA_amd64.deb
+
+axel -a https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v7.0.2/onlyoffice-desktopeditors_amd64.deb
+
+sudo dpkg -i onlyoffice-desktopeditors_amd64.deb
+
+axel -a https://github.com/bitwarden/desktop/releases/download/v1.32.1/Bitwarden-1.32.1-amd64.deb
+
+sudo dpkg -i Bitwarden-1.32.1-amd64.deb
