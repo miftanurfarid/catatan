@@ -61,19 +61,19 @@ sudo rpm --import linux_signing_key.pub
 
 axel -a https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
-sudo dnf install google-chrome-stable_current_x86_64.rpm
+sudo dnf install -y google-chrome-stable_current_x86_64.rpm
 
 axel -a https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.rpm
 
-sudo dnf install GitHubDesktop-linux-2.9.6-linux1.rpm
+sudo dnf install -y GitHubDesktop-linux-2.9.6-linux1.rpm
 
 axel -a https://github.com/shiftkey/desktop/releases/download/release-2.9.9-linux2/GitHubDesktop-linux-2.9.9-linux2.rpm
 
-sudo dnf install GitHubDesktop-linux-2.9.9-linux2.rpm
+sudo dnf install -y GitHubDesktop-linux-2.9.9-linux2.rpm
 
 axel -a https://zoom.us/client/latest/zoom_x86_64.rpm
 
-ael -a https://zoom.us/linux/download/pubkey
+axel -a https://zoom.us/linux/download/pubkey
 
 sudo rpm --import package-signing-key.pub
 
@@ -85,7 +85,7 @@ wps-office no auto-update: https://www.wps.com/download/
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install -y flathub org.onlyoffice.desktopeditors io.bit3.WhatsAppQT io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
+flatpak install -y flathub org.onlyoffice.desktopeditors io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
 
 git clone https://github.com/IamDH4/ttf-wps-fonts.git
 
