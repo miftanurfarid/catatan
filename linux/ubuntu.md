@@ -38,6 +38,6 @@ packettracer
 
 vscode
 
-pip3 install numpy tensorflow librosa pandas seaborn
+pip3 install numpy tensorflow librosa pandas seaborn opencv-python
 
 https://linuxhint.com/install-cuda-ubuntu/
