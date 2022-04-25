@@ -41,3 +41,43 @@ vscode
 pip3 install numpy tensorflow librosa pandas seaborn opencv-python
 
 https://linuxhint.com/install-cuda-ubuntu/
+
+# What I do first
+
+1. Install Gnome
+
+sudo apt install gnome-tweaks
+
+sudo apt remove gnome-shell-extension-ubuntu-dock
+
+sudo apt install vanilla-gnome-desktop
+
+2. Second
+
+- Remove Snap Garbage
+
+snap list
+
+- remove snap packages from list
+
+sudo snap remove --purge package-name
+
+- clear Snap cashe
+
+sudo rm -rf /var/cache/snapd/
+
+- remove snap gui tool
+
+sudo apt autoremove --purge snapd gnome-software-plugin-snap
+
+rm -fr ~/snap
+
+sudo apt-mark hold snapd
+
+3. And Finally install Firefox from PPA
+
+sudo add-apt-repository ppa:mozillateam/ppa
+
+sudo apt update
+
+sudo apt install firefox-esr
