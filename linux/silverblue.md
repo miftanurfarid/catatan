@@ -60,6 +60,10 @@ flatpak install -y com.github.xournalpp.xournalpp
 
 flatpak install -y flathub com.mattjakeman.ExtensionManager
 
+flatpak install -y org.qbittorrent.qBittorrent
+
+flatpak install -y org.remmina.Remmina
+
 toolbox create
 
 toolbox enter
@@ -67,3 +71,5 @@ toolbox enter
 sudo dnf update
 
 sudo dnf install neofetch htop
+
+
