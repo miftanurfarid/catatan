@@ -12,7 +12,7 @@ sudo apt install firmware-linux
 
 # Install beberapa package 
 
-sudo apt install git texstudio lyx texlive-lang-all xournal okular calibre qpdfview spyder jupyter-notebook octave octave-signal telegram-desktop inkscape gimp htop rclone neofetch axel vlc simple-scan torbrowser-launcher playonlinux flatpak
+sudo apt install git texstudio lyx texlive-lang-all xournal okular calibre qpdfview spyder jupyter-notebook octave octave-signal telegram-desktop inkscape gimp htop rclone neofetch axel vlc simple-scan torbrowser-launcher playonlinux flatpak libreoffice-texmaths
 
 # Upgrade Debian Stable ke Debian Testing
 
