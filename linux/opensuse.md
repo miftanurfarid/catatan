@@ -2,7 +2,7 @@ sudo zypper refresh
 
 sudo zypper update
 
-sudo zypper install texlive-scheme-medium lyx octave spyder3 git-core htop inkscape texstudio xournal xournalpp qpdfview gimp torbrowser-launcher axel neofetch telegram-desktop flatpak p7zip-full playonlinux 
+sudo zypper install texlive-scheme-medium lyx octave spyder git-core htop inkscape texstudio xournalpp qpdfview gimp torbrowser-launcher axel neofetch telegram-desktop flatpak 7zip playonlinux 
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -20,9 +20,9 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
 sudo zypper install google-chrome-stable_current_x86_64.rpm
 
-wget https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.rpm
+wget https://github.com/shiftkey/desktop/releases/download/release-3.0.2-linux1/GitHubDesktop-linux-3.0.2-linux1.rpm
 
-sudo zypper install GitHubDesktop-linux-2.9.6-linux1.rpm
+sudo zypper install GitHubDesktop-linux-3.0.2-linux1.rpm
 
 wget https://github.com/johannesjo/super-productivity/releases/download/v7.10.1/superProductivity-7.10.1.x86_64.rpm
 
@@ -32,10 +32,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 flatpak install flathub  us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.bit3.WhatsAppQT io.gitlab.librewolf-community
 
-zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_15.0/Essentials packman-essentials
+sudo zypper ar -cfp 90 https://twrepo.opensuse.id/packman/openSUSE_Tumbleweed/ packman
 
 sudo zypper refresh
 
-sudo zypper install x264 libx265-199 libx264-161 ffmpeg gstreamer-plugins-bad gstreamer-plugins-ugly
-
-sudo zypper install gstreamer-plugins-libav
+sudo zypper install x264 libx265-199 libx264-161 ffmpeg gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-libav
