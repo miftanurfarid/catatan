@@ -46,34 +46,34 @@
 
 1. SuperProductivity
 
-  - `wget https://github.com/johannesjo/super-productivity/releases/download/v7.10.1/superProductivity-7.10.1.x86_64.rpm`
+   - `wget https://github.com/johannesjo/super-productivity/releases/download/v7.10.1/superProductivity-7.10.1.x86_64.rpm`
 
-  - `sudo zypper install superProductivity-7.10.1.x86_64.rpm`
+   - `sudo zypper install superProductivity-7.10.1.x86_64.rpm`
 
 1. Packman Repo
 
-  - `sudo zypper ar -cfp 90 https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman`
+   - `sudo zypper ar -cfp 90 https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman`
 
-  - `sudo zypper refresh`
+   - `sudo zypper refresh`
 
-  - `sudo zypper install x264 libx265-199 libx264-161 ffmpeg gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-libav`
+   - `sudo zypper install x264 libx265-199 libx264-161 ffmpeg gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-libav`
 
 1. Brave Browser
 
-  - `sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc`
+   - `sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc`
 
-  - `sudo zypper addrepo --refresh https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser`
+   - `sudo zypper addrepo --refresh https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser`
 
-  - `sudo zypper refresh`
+   - `sudo zypper refresh`
   
-  - `sudo zypper install brave-browser`
+   - `sudo zypper install brave-browser`
   
 1. Sort Application Gnome
 
-  - `gsettings set org.gnome.shell app-picker-layout "[]"`
+   - `gsettings set org.gnome.shell app-picker-layout "[]"`
 
 1. Flatpak
 
-  - `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
+   - `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-  - `flatpak install flathub us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.gitlab.librewolf-community`
+   - `flatpak install flathub us.zoom.Zoom org.onlyoffice.desktopeditors com.wps.Office com.bitwarden.desktop io.gitlab.librewolf-community`
