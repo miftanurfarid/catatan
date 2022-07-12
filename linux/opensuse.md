@@ -2,9 +2,9 @@
 
 1. Install Usefull Package
 
-  1. `sudo zypper refresh`
+   1. `sudo zypper refresh`
 
-  1. `sudo zypper update`
+   1. `sudo zypper update`
 
   1. `sudo zypper install texlive-scheme-medium lyx octave spyder git-core htop inkscape texstudio xournalpp qpdfview gimp torbrowser-launcher axel neofetch telegram-desktop flatpak 7zip PlayOnLinux`
 
