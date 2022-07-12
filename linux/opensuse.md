@@ -36,7 +36,7 @@
 
    - `sudo zypper install GitHubDesktop-linux-3.0.2-linux1.rpm`
 
-   1. Repo
+   2. Repo
   
    - `sudo rpm --import https://mirror.mwt.me/ghd/gpgkey`
 		
