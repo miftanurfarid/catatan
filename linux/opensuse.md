@@ -6,27 +6,27 @@
 
    1. `sudo zypper update`
 
-  1. `sudo zypper install texlive-scheme-medium lyx octave spyder git-core htop inkscape texstudio xournalpp qpdfview gimp torbrowser-launcher axel neofetch telegram-desktop flatpak 7zip PlayOnLinux`
+   1. `sudo zypper install texlive-scheme-medium lyx octave spyder git-core htop inkscape texstudio xournalpp qpdfview gimp torbrowser-launcher axel neofetch telegram-desktop flatpak 7zip PlayOnLinux`
 
 1. VS Code
 
-  1. `sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc`
+   1. `sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc`
 
-  1. `sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode vscode`
+   1. `sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode vscode`
 
-  1. `sudo zypper refresh`
+   1. `sudo zypper refresh`
 
-  1. `sudo zypper install code`
+   1. `sudo zypper install code`
 
 1. Google Chrome
 
-  1. `wget https://dl.google.com/linux/linux_signing_key.pub`
+ 1. `wget https://dl.google.com/linux/linux_signing_key.pub`
 
-  1. `sudo rpm --import linux_signing_key.pub`
+   1. `sudo rpm --import linux_signing_key.pub`
 
-  1. `wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm`
+   1. `wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm`
 
-  1. `sudo zypper install google-chrome-stable_current_x86_64.rpm`
+   1. `sudo zypper install google-chrome-stable_current_x86_64.rpm`
 
 1. Install Github Desktop
 
