@@ -20,7 +20,7 @@
 
 1. Google Chrome
 
- 1. `wget https://dl.google.com/linux/linux_signing_key.pub`
+   1. `wget https://dl.google.com/linux/linux_signing_key.pub`
 
    1. `sudo rpm --import linux_signing_key.pub`
 
@@ -29,12 +29,10 @@
    1. `sudo zypper install google-chrome-stable_current_x86_64.rpm`
 
 1. Install Github Desktop
-
   1. RPM File
-
    1. `wget https://github.com/shiftkey/desktop/releases/download/release-3.0.2-linux1/GitHubDesktop-linux-3.0.2-linux1.rpm`
 
-   1. `sudo zypper install GitHubDesktop-linux-3.0.2-linux1.rpm`
+      1. `sudo zypper install GitHubDesktop-linux-3.0.2-linux1.rpm`
 
   1. Repo
   
