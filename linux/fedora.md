@@ -55,9 +55,7 @@ sudo dnf check-update
 
 sudo dnf install code
 
-axel -a https://dl.google.com/linux/linux_signing_key.pub
-
-sudo rpm --import linux_signing_key.pub
+sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
 
 axel -a https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
@@ -73,13 +71,15 @@ axel -a https://zoom.us/linux/download/pubkey -o package-signing-key.pub
 
 sudo rpm --import package-signing-key.pub
 
-sudo rpm -i zoom_x86_64.rpm
+sudo dnf install zoom_x86_64.rpm
 
 bitwarden no auto-update: https://bitwarden.com/download/
 
 wps-office no auto-update: https://www.wps.com/download/
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+flatpak install flathub com.mattjakeman.ExtensionManager
 
 flatpak install -y flathub org.onlyoffice.desktopeditors io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
 
