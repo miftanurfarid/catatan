@@ -89,7 +89,7 @@ cd ttf-wps-fonts
 
 sudo bash install.sh
 
-pip3 install tensorflow librosa jupyterlab seaborn pandas
+pip3 install tensorflow librosa seaborn pandas PyPDF2
 
 sudo dnf install curl cabextract xorg-x11-font-utils fontconfig
 
