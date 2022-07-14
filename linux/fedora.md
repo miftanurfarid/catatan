@@ -98,3 +98,5 @@ sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore
 sudo dnf install https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 sudo dnf install playonlinux
+
+gsettings set org.gnome.shell app-picker-layout "[]"
