@@ -73,6 +73,14 @@ sudo rpm --import package-signing-key.pub
 
 sudo dnf install zoom_x86_64.rpm
 
+sudo dnf install dnf-plugins-core
+
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+
+sudo dnf install brave-browser
+
 bitwarden no auto-update: https://bitwarden.com/download/
 
 wps-office no auto-update: https://www.wps.com/download/
