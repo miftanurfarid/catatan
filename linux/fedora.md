@@ -87,7 +87,7 @@ wps-office no auto-update: https://www.wps.com/download/
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install flathub com.mattjakeman.ExtensionManager
+flatpak install -y flathub com.mattjakeman.ExtensionManager
 
 flatpak install -y flathub org.onlyoffice.desktopeditors io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
 
@@ -108,3 +108,6 @@ sudo dnf install https://downloads.sourceforge.net/project/mscorefonts2/rpms/mst
 sudo dnf install playonlinux
 
 gsettings set org.gnome.shell app-picker-layout "[]"
+
+sudo dnf install gnome-extensions-app chrome-gnome-shell
+
