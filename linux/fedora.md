@@ -100,3 +100,6 @@ sudo dnf install https://downloads.sourceforge.net/project/mscorefonts2/rpms/mst
 sudo dnf install playonlinux
 
 gsettings set org.gnome.shell app-picker-layout "[]"
+
+sudo dnf install gnome-extensions-app chrome-gnome-shell
+
