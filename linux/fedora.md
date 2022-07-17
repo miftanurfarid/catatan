@@ -53,7 +53,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 sudo dnf check-update
 
-sudo dnf install code
+sudo dnf install -y code
 
 sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
 
