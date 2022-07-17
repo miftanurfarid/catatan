@@ -73,31 +73,17 @@ sudo rpm --import package-signing-key.pub
 
 sudo dnf install zoom_x86_64.rpm
 
-sudo dnf install dnf-plugins-core
+sudo dnf install -y dnf-plugins-core
 
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 
-sudo dnf install brave-browser
-
-bitwarden no auto-update: https://bitwarden.com/download/
-
-wps-office no auto-update: https://www.wps.com/download/
+sudo dnf install -y brave-browser
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 flatpak install -y flathub com.mattjakeman.ExtensionManager
-
-flatpak install -y flathub org.onlyoffice.desktopeditors io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
-
-git clone https://github.com/IamDH4/ttf-wps-fonts.git
-
-cd ttf-wps-fonts
-
-sudo bash install.sh
-
-pip3 install tensorflow librosa seaborn pandas PyPDF2
 
 sudo dnf install curl cabextract xorg-x11-font-utils fontconfig
 
@@ -111,3 +97,16 @@ gsettings set org.gnome.shell app-picker-layout "[]"
 
 sudo dnf install gnome-extensions-app chrome-gnome-shell
 
+pip3 install tensorflow librosa seaborn pandas PyPDF2
+
+bitwarden no auto-update: https://bitwarden.com/download/
+
+wps-office no auto-update: https://www.wps.com/download/
+
+git clone https://github.com/IamDH4/ttf-wps-fonts.git
+
+cd ttf-wps-fonts
+
+sudo bash install.sh
+
+flatpak install -y flathub org.onlyoffice.desktopeditors io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
