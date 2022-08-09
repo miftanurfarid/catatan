@@ -109,4 +109,8 @@ cd ttf-wps-fonts
 
 sudo bash install.sh
 
+axel -a https://github.com/johannesjo/super-productivity/releases/download/v7.11.5/superProductivity-7.11.5.x86_64.rpm
+
+sudo dnf install superProductivity-7.11.5.x86_64.rpm
+
 flatpak install -y flathub org.onlyoffice.desktopeditors io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
