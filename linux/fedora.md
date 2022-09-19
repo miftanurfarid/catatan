@@ -75,6 +75,10 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 flatpak install -y flathub com.mattjakeman.ExtensionManager
 
+axel -a https://github.com/johannesjo/super-productivity/releases/download/v7.12.0/superProductivity-7.12.0.x86_64.rpm
+
+sudo dnf install superProductivity-7.12.0.x86_64.rpm
+
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 sudo dnf install https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
@@ -94,9 +98,5 @@ git clone https://github.com/IamDH4/ttf-wps-fonts.git
 cd ttf-wps-fonts
 
 sudo bash install.sh
-
-axel -a https://github.com/johannesjo/super-productivity/releases/download/v7.11.5/superProductivity-7.11.5.x86_64.rpm
-
-sudo dnf install superProductivity-7.11.5.x86_64.rpm
 
 flatpak install -y flathub org.onlyoffice.desktopeditors io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
