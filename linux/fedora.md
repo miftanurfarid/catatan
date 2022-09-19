@@ -79,9 +79,7 @@ axel -a https://github.com/johannesjo/super-productivity/releases/download/v7.12
 
 sudo dnf install -y superProductivity-7.12.0.x86_64.rpm
 
-sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
-
-sudo dnf install https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+sudo dnf install -y https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 sudo dnf install playonlinux
 
