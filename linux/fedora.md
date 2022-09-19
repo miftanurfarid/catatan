@@ -81,7 +81,7 @@ sudo dnf install -y superProductivity-7.12.0.x86_64.rpm
 
 sudo dnf install -y https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
-sudo dnf install playonlinux
+sudo dnf install -y playonlinux
 
 gsettings set org.gnome.shell app-picker-layout "[]"
 
