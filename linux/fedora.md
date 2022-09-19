@@ -61,9 +61,9 @@ axel -a https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.r
 
 sudo dnf install -y google-chrome-stable_current_x86_64.rpm
 
-axel -a https://github.com/shiftkey/desktop/releases/download/release-3.0.3-linux1/GitHubDesktop-linux-3.0.3-linux1.rpm
+axel -a https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.rpm
 
-sudo dnf install -y GitHubDesktop-linux-3.0.3-linux1.rpm
+sudo dnf install -y GitHubDesktop-linux-3.0.6-linux1.rpm
 
 axel -a https://zoom.us/client/latest/zoom_x86_64.rpm
 
