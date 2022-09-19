@@ -37,14 +37,6 @@ sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 
 sudo dnf upgrade -y --refresh
 
-sudo dnf check
-
-sudo dnf autoremove
-
-sudo dnf update
-
-sudo reboot
-
 sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre gnome-tweaks unrar jupyter-notebook okular git-cola ffmpeg aria2 texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -72,8 +64,6 @@ axel -a https://zoom.us/linux/download/pubkey -o package-signing-key.pub
 sudo rpm --import package-signing-key.pub
 
 sudo dnf install zoom_x86_64.rpm
-
-sudo dnf install -y dnf-plugins-core
 
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 
