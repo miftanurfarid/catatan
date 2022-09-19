@@ -63,7 +63,7 @@ axel -a https://zoom.us/linux/download/pubkey -o package-signing-key.pub
 
 sudo rpm --import package-signing-key.pub
 
-sudo dnf install zoom_x86_64.rpm
+sudo dnf install -y zoom_x86_64.rpm
 
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 
@@ -77,7 +77,7 @@ flatpak install -y flathub com.mattjakeman.ExtensionManager
 
 axel -a https://github.com/johannesjo/super-productivity/releases/download/v7.12.0/superProductivity-7.12.0.x86_64.rpm
 
-sudo dnf install superProductivity-7.12.0.x86_64.rpm
+sudo dnf install -y superProductivity-7.12.0.x86_64.rpm
 
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
