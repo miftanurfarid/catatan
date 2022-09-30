@@ -85,7 +85,17 @@ sudo dnf install -y playonlinux
 
 gsettings set org.gnome.shell app-picker-layout "[]"
 
-pip3 install tensorflow librosa seaborn pandas PyPDF2
+pip install tensorflow
+
+pip install librosa
+
+pip install seaborn
+
+pip install pandas
+
+pip install PyPDF2
+
+pip install debugpy
 
 bitwarden no auto-update: https://bitwarden.com/download/
 
