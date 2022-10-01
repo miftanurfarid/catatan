@@ -97,6 +97,8 @@ pip install PyPDF2
 
 pip install debugpy
 
+pip install nltk
+
 bitwarden no auto-update: https://bitwarden.com/download/
 
 wps-office no auto-update: https://www.wps.com/download/
