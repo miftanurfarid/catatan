@@ -99,6 +99,8 @@ pip install debugpy
 
 pip install nltk
 
+pip install spacy
+
 bitwarden no auto-update: https://bitwarden.com/download/
 
 wps-office no auto-update: https://www.wps.com/download/
