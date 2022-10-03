@@ -1,4 +1,4 @@
-# Display Flickering
+1# Display Flickering
 
 1. `sudo nano /etc/default/grub`
 
@@ -101,6 +101,8 @@ pip install nltk
 
 pip install spacy
 
+git clone https://github.com/IamDH4/ttf-wps-fonts.git
+
 cd ttf-wps-fonts
 
 sudo bash install.sh
@@ -112,3 +114,7 @@ flatpak install -y flathub com.wps.Office
 flatpak install -y flathub com.bitwarden.desktop
 
 flatpak install -y flathub com.elsevier.MendeleyDesktop
+
+flatpak install -y flathub us.zoom.Zoom
+
+flatpak install flathub io.github.shiftey.Desktop
