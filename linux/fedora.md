@@ -37,7 +37,7 @@ sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 
 sudo dnf upgrade -y --refresh
 
-sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran mendeleydesktop libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre gnome-tweaks unrar jupyter-notebook okular git-cola ffmpeg aria2 texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission cabextract xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 discord
+sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre gnome-tweaks unrar jupyter-notebook okular git-cola ffmpeg aria2 texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission cabextract xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 discord
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -101,14 +101,14 @@ pip install nltk
 
 pip install spacy
 
-bitwarden no auto-update: https://bitwarden.com/download/
-
-wps-office no auto-update: https://www.wps.com/download/
-
-git clone https://github.com/IamDH4/ttf-wps-fonts.git
-
 cd ttf-wps-fonts
 
 sudo bash install.sh
 
-flatpak install -y flathub org.onlyoffice.desktopeditors io.gitlab.librewolf-community com.wps.Office com.bitwarden.desktop
+flatpak install -y flathub org.onlyoffice.desktopeditors
+
+flatpak install -y flathub com.wps.Office
+
+flatpak install -y flathub com.bitwarden.desktop
+
+flatpak install -y flathub com.elsevier.MendeleyDesktop
