@@ -87,6 +87,10 @@ gsettings set org.gnome.shell app-picker-layout "[]"
 
 pip install tensorflow
 
+pip install torch torchvision torchaudio
+
+pip install scikit-learn
+
 pip install librosa
 
 pip install seaborn
