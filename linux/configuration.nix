@@ -97,6 +97,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    tor-browser-bundle-bin
+    zoom-us
+    brave
     whatsapp-for-linux
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
@@ -120,8 +123,9 @@
     calibre
     libsForQt5.okular
     discord
-    python39Full
-    python39Packages.pygments
+    #python39Full
+    #python39Packages.pygments
+    (python310.withPackages(ps: with ps; [pygments] ))
     gnomeExtensions.clipman
     gnomeExtensions.tray-icons-reloaded
   ];
@@ -158,4 +162,5 @@
 
   # Discord allow update version
   nixpkgs.overlays = [(self: super: { discord = super.discord.overrideAttrs (_: { src = builtins.fetchTarball https://dl.discordapp.net/apps/linux/0.0.22/discord-0.0.22.tar.gz; });})];
+
 }
