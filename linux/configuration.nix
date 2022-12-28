@@ -97,12 +97,13 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    whatsapp-for-linux
+    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    wget
+    neovim
     texlive.combined.scheme-full
     lyx
     octaveFull
-    #spyder
     git
     htop
     inkscape
@@ -120,15 +121,9 @@
     libsForQt5.okular
     discord
     python39Full
-    neovim
-    vim
     python39Packages.pygments
-    #python39Packages.mlxtend
-    #python39Packages.librosa
-    #python39Packages.ipython
-    #python39Packages.notebook
-    #python39Packages.ipykernel
-    #python39Packages.numpy
+    gnomeExtensions.clipman
+    gnomeExtensions.tray-icons-reloaded
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -160,4 +155,7 @@
   
   # Allow broken
   nixpkgs.config.allowBroken = true;
+
+  # Discord allow update version
+  nixpkgs.overlays = [(self: super: { discord = super.discord.overrideAttrs (_: { src = builtins.fetchTarball https://dl.discordapp.net/apps/linux/0.0.22/discord-0.0.22.tar.gz; });})];
 }
