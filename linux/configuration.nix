@@ -163,4 +163,7 @@
   # Discord allow update version
   nixpkgs.overlays = [(self: super: { discord = super.discord.overrideAttrs (_: { src = builtins.fetchTarball https://dl.discordapp.net/apps/linux/0.0.22/discord-0.0.22.tar.gz; });})];
 
+  # enable nix command and flakes
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 }
