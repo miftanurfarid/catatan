@@ -37,7 +37,7 @@ sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 
 sudo dnf upgrade -y --refresh
 
-sudo dnf install -y texlive-scheme-basic lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre gnome-tweaks unrar jupyter-notebook okular git-cola ffmpeg aria2 texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission cabextract xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 discord
+sudo dnf install -y texlive-scheme-full lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre gnome-tweaks unrar jupyter-notebook okular git-cola ffmpeg aria2 texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission cabextract xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 discord neovim steam
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -52,18 +52,6 @@ sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
 axel -a https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
 sudo dnf install -y google-chrome-stable_current_x86_64.rpm
-
-axel -a https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.rpm
-
-sudo dnf install -y GitHubDesktop-linux-3.0.6-linux1.rpm
-
-axel -a https://zoom.us/client/latest/zoom_x86_64.rpm
-
-axel -a https://zoom.us/linux/download/pubkey -o package-signing-key.pub 
-
-sudo rpm --import package-signing-key.pub
-
-sudo dnf install -y zoom_x86_64.rpm
 
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 
@@ -121,4 +109,4 @@ flatpak install -y flathub com.elsevier.MendeleyDesktop
 
 flatpak install -y flathub us.zoom.Zoom
 
-flatpak install flathub io.github.shiftey.Desktop
+flatpak install -y flathub io.github.shiftey.Desktop
