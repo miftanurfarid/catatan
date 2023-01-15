@@ -8,6 +8,10 @@
 
 `sudo apt install gnome-tweaks`
 
+# remove games
+
+`sudo apt purge aisleriot gnome-mahjongg gnome-mines`
+
 # deb package install:
 
 - vscode
@@ -23,6 +27,10 @@
 `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
 `flatpak install -y flathub us.zoom.Zoom io.github.shiftey.Desktop com.elsevier.MendeleyDesktop`
+
+# snap install:
+
+`sudo snap install superproductivity`
 
 # disable ubuntu dock using extension manager from flatpak
 
