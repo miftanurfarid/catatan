@@ -11,22 +11,26 @@
 # deb package install:
 
 - vscode
-
-- google chrome, brave browser, megasync, discord, packet tracer, gns3
+- google chrome
+- brave browser
+- megasync
+- discord
+- packet tracer
+- gns3
 
 # flatpak install:
 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+`flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
-flatpak install -y flathub us.zoom.Zoom io.github.shiftey.Desktop com.elsevier.MendeleyDesktop
+`flatpak install -y flathub us.zoom.Zoom io.github.shiftey.Desktop com.elsevier.MendeleyDesktop`
 
 # disable ubuntu dock using extension manager from flatpak
 
-flatpak install -y flathub com.mattjakeman.ExtensionManager
+`flatpak install -y flathub com.mattjakeman.ExtensionManager`
 
 # python
 
-pip3 install numpy tensorflow librosa pandas seaborn opencv-python
+`pip3 install numpy tensorflow librosa pandas seaborn opencv-python`
 
 # cuda
 
@@ -34,6 +38,7 @@ https://linuxhint.com/install-cuda-ubuntu/
 
 # add to ~/.bashrc
 
+```
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
@@ -45,3 +50,4 @@ else
 fi
 
 gsettings set org.gnome.shell app-picker-layout "[]"
+```
