@@ -1,83 +1,47 @@
-sudo apt update
+# apt install
 
-sudo apt upgrade
+`sudo apt install -y texlive-full octave spyder git htop inkscape texstudio xournalpp qpdfview gimp torbrowser-launcher axel neofetch vlc telegram-desktop rclone calibre unrar python3-notebook okular neovim vim steam texmaker flatpak gnome-software-plugin-flatpak nvidia-driver-515 nvidia-dkms-515 gparted synaptic plocate bpython`
 
-sudo apt install libreoffice texstudio git flatpak lyx octave lyx octave spyder3 htop inkscape xournal qpdfview gimp torbrowser-launcher axel neofetch vlc telegram-desktop simple-scan playonlinux python3-pip python3-notebook rclone gedit-plugin-terminal gedit-plugin-git calibre okular texlive-lang-all libfuse2 unrar chrome-gnome-shell 
+# remove minimize & maximize using gnome-tweaks
 
-axel -a https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.deb
+`sudo add-apt-repository universe`
 
-sudo dpkg -i GitHubDesktop-linux-2.9.6-linux1.deb
+`sudo apt install gnome-tweaks`
 
-sudo apt --fix-broken install
+# deb package install:
 
-axel -a https://github.com/shiftkey/desktop/releases/download/release-2.9.9-linux2/GitHubDesktop-linux-2.9.9-linux2.deb
+- vscode
 
-sudo dpkg -i GitHubDesktop-linux-2.9.9-linux2.deb
+- google chrome, brave browser, megasync, discord, packet tracer, gns3
 
-axel -a https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# flatpak install:
 
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-axel -a https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10920/wps-office_11.1.0.10920.XA_amd64.deb
+flatpak install -y flathub us.zoom.Zoom io.github.shiftey.Desktop com.elsevier.MendeleyDesktop
 
-sudo dpkg -i wps-office_11.1.0.10920.XA_amd64.deb
+# disable ubuntu dock using extension manager from flatpak
 
-axel -a https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v7.0.2/onlyoffice-desktopeditors_amd64.deb
+flatpak install -y flathub com.mattjakeman.ExtensionManager
 
-sudo dpkg -i onlyoffice-desktopeditors_amd64.deb
-
-axel -a https://github.com/bitwarden/desktop/releases/download/v1.32.1/Bitwarden-1.32.1-amd64.deb
-
-sudo dpkg -i Bitwarden-1.32.1-amd64.deb
-
-https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.8-stable_amd64.deb
-
-sudo dpkg -i mendeleydesktop_1.19.8-stable_amd64.deb
-
-packettracer
-
-vscode
+# python
 
 pip3 install numpy tensorflow librosa pandas seaborn opencv-python
 
+# cuda
+
 https://linuxhint.com/install-cuda-ubuntu/
 
-# What I do first
+# add to ~/.bashrc
 
-1. Install Gnome
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    }
 
-sudo apt install gnome-tweaks
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\n\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\n> '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\n\w$(parse_git_branch)\n> '
+fi
 
-sudo apt remove gnome-shell-extension-ubuntu-dock
-
-sudo apt install vanilla-gnome-desktop
-
-2. Second
-
-- Remove Snap Garbage
-
-snap list
-
-- remove snap packages from list
-
-sudo snap remove --purge package-name
-
-- clear Snap cashe
-
-sudo rm -rf /var/cache/snapd/
-
-- remove snap gui tool
-
-sudo apt autoremove --purge snapd gnome-software-plugin-snap
-
-rm -fr ~/snap
-
-sudo apt-mark hold snapd
-
-3. And Finally install Firefox from PPA
-
-sudo add-apt-repository ppa:mozillateam/ppa
-
-sudo apt update
-
-sudo apt install firefox-esr
+gsettings set org.gnome.shell app-picker-layout "[]"
