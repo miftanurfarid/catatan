@@ -1,4 +1,4 @@
-1# Display Flickering
+# Display Flickering
 
 1. `sudo nano /etc/default/grub`
 
@@ -21,10 +21,10 @@
 
 # Disable ksshaskpass in Fedora 34 KDE
 
-echo 'unset SSH_ASKPASS' >> ~/.bashrc
+`echo 'unset SSH_ASKPASS' >> ~/.bashrc`
 
 # All in One
-
+```
 echo 'fastestmirror=true' | sudo tee -a /etc/dnf/dnf.conf
 
 echo 'max_parallel_downloads=5' | sudo tee -a /etc/dnf/dnf.conf
@@ -71,8 +71,6 @@ sudo dnf install -y https://downloads.sourceforge.net/project/mscorefonts2/rpms/
 
 sudo dnf install -y playonlinux
 
-gsettings set org.gnome.shell app-picker-layout "[]"
-
 pip install tensorflow
 
 pip install torch torchvision torchaudio
@@ -110,3 +108,52 @@ flatpak install -y flathub com.elsevier.MendeleyDesktop
 flatpak install -y flathub us.zoom.Zoom
 
 flatpak install -y flathub io.github.shiftey.Desktop
+```
+# packet tracer
+
+https://github.com/thiagoojack/packettracer-fedora
+
+# bashrc
+
+`echo "gsettings set org.gnome.shell app-picker-layout "[]"" >> ~/.bashrc`
+
+# gns3
+
+1. Install Dependency packages and Wireshark
+```
+sudo dnf -y install git gcc cmake flex bison
+sudo dnf -y install elfutils-libelf-devel libuuid-devel libpcap-devel
+sudo dnf -y install python3-tornado python3-netifaces python3-devel python-pip python3-setuptools python3-PyQt4 python3-zmq
+sudo dnf -y install wireshark
+```
+2. Install GNS3 GUI and Server
+```
+sudo dnf -y install gns3-server gns3-gui
+```
+3. Install Dynamips
+```
+git clone https://github.com/GNS3/dynamips
+cd dynamips
+mkdir build
+cd build
+cmake ..
+sudo make install
+```
+4. Install vpcs
+```
+wget https://liquidtelecom.dl.sourceforge.net/project/vpcs/0.8/vpcs_0.8b_Linux64
+mv vpcs_0.8b_Linux64 vpcs
+chmod +x vpcs
+sudo cp vpcs /usr/local/bin/
+vpcs -v
+```
+5. Setup IOU support
+```
+git clone http://github.com/ndevilla/iniparser.git
+cd iniparser
+make
+sudo cp libiniparser.* /usr/lib/
+sudo cp src/iniparser.h /usr/local/include
+sudo cp src/dictionary.h /usr/local/include
+cd ..
+```
