@@ -59,18 +59,19 @@ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 
 sudo dnf install -y brave-browser
 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-flatpak install -y flathub com.mattjakeman.ExtensionManager
-
-axel -a https://github.com/johannesjo/super-productivity/releases/download/v7.12.0/superProductivity-7.12.0.x86_64.rpm
-
-sudo dnf install -y superProductivity-7.12.0.x86_64.rpm
-
 sudo dnf install -y https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 sudo dnf install -y playonlinux
 
+git clone https://github.com/IamDH4/ttf-wps-fonts.git
+
+cd ttf-wps-fonts
+
+sudo bash install.sh
+```
+
+# python
+```
 pip install tensorflow
 
 pip install torch torchvision torchaudio
@@ -90,12 +91,12 @@ pip install debugpy
 pip install nltk
 
 pip install spacy
+```
+# flatpak
+```
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-git clone https://github.com/IamDH4/ttf-wps-fonts.git
-
-cd ttf-wps-fonts
-
-sudo bash install.sh
+flatpak install -y flathub com.mattjakeman.ExtensionManager
 
 flatpak install -y flathub org.onlyoffice.desktopeditors
 
@@ -109,6 +110,18 @@ flatpak install -y flathub us.zoom.Zoom
 
 flatpak install -y flathub io.github.shiftey.Desktop
 ```
+# snapcraft
+```
+sudo dnf install snapd
+
+sudo ln -s /var/lib/snapd/snap /snap
+
+sudo snap install superproductivity
+```
+# aliases
+
+`echo "alias dup="sudo dnf upgrade && flatpak update && sudo snap refresh"" >> ~/.bashrc`
+
 # packet tracer
 
 https://github.com/thiagoojack/packettracer-fedora
