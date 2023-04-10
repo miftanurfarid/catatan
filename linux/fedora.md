@@ -37,7 +37,7 @@ sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 
 sudo dnf upgrade -y --refresh
 
-sudo dnf install -y texlive-scheme-full lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre gnome-tweaks unrar jupyter-notebook okular git-cola ffmpeg aria2 texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission cabextract xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 discord neovim vim steam texmaker pdftk
+sudo dnf install -y texlive-scheme-full lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre gnome-tweaks unrar jupyter-notebook okular git-cola ffmpeg aria2 texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission cabextract xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 discord neovim vim steam texmaker pdftk touchegg gparted
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -128,9 +128,33 @@ sudo snap install spotify
 
 https://github.com/thiagoojack/packettracer-fedora
 
-# bashrc
+# bashrc user
+```
+parse_git_branch() {
+       git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+   }
+ 
+export PS1="\n\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n> "
 
-`echo "gsettings set org.gnome.shell app-picker-layout "[]"" >> ~/.bashrc`
+gsettings set org.gnome.shell app-picker-layout "[]"
+
+alias dup="sudo dnf upgrade -y && flatpak update -y && sudo snap refresh"
+alias dupr="sudo dnf upgrade -y && flatpak update -y && sudo snap refresh && reboot"
+alias dups="sudo dnf upgrade -y && flatpak update -y && sudo snap refresh && shutdown -P 0"
+
+```
+# bashrc root
+```
+parse_git_branch() {
+       git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+   }
+ 
+export PS1="\n\[\033[0;31m\][\u]\[\033[0;37m\]:\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n> "
+
+alias dup="sudo dnf upgrade -y && flatpak update -y && sudo snap refresh"
+alias dupr="sudo dnf upgrade -y && flatpak update -y && sudo snap refresh && reboot"
+alias dups="sudo dnf upgrade -y && flatpak update -y && sudo snap refresh && shutdown -P 0"
+```
 
 # gns3
 
