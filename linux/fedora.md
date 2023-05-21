@@ -24,6 +24,7 @@
 `echo 'unset SSH_ASKPASS' >> ~/.bashrc`
 
 # All in One
+
 ```
 echo 'fastestmirror=true' | sudo tee -a /etc/dnf/dnf.conf
 
@@ -37,7 +38,7 @@ sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 
 sudo dnf upgrade -y --refresh
 
-sudo dnf install -y texlive-scheme-full lyx octave python3-spyder git-core htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop simple-scan ibus-m17n rclone calibre gnome-tweaks unrar jupyter-notebook okular git-cola ffmpeg aria2 texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission cabextract xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 discord neovim vim steam texmaker pdftk touchegg gparted
+sudo dnf install -y texlive-scheme-full lyx octave python3-spyder htop inkscape libreoffice texstudio xournal xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley torbrowser-launcher axel neofetch kcm_wacomtablet vlc telegram-desktop rclone calibre gnome-tweaks unrar jupyter-notebook okular git-cola ffmpeg aria2 texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission cabextract xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 neovim vim steam texmaker pdftk touchegg gparted
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -71,6 +72,7 @@ sudo bash install.sh
 ```
 
 # python
+
 ```
 pip install tensorflow
 
@@ -92,7 +94,9 @@ pip install nltk
 
 pip install spacy
 ```
+
 # flatpak
+
 ```
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
@@ -110,7 +114,9 @@ flatpak install -y flathub us.zoom.Zoom
 
 flatpak install -y flathub io.github.shiftey.Desktop
 ```
+
 # snapcraft
+
 ```
 sudo dnf install snapd
 
@@ -120,15 +126,15 @@ sudo snap install superproductivity
 
 sudo snap install spotify
 ```
-# aliases
-
-`echo "alias dup="sudo dnf upgrade && flatpak update && sudo snap refresh"" >> ~/.bashrc`
 
 # packet tracer
 
+```
 https://github.com/thiagoojack/packettracer-fedora
+```
 
 # bashrc user
+
 ```
 parse_git_branch() {
        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
