@@ -9,4 +9,5 @@
 8. list of dotfiles:
     1. `~/.config/i3`
     2. /usr/share/X11/xorg.conf.d/70-wacom.conf
+    3. .gitconfig
     3. etc
