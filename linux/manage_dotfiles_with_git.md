@@ -8,7 +8,7 @@
 
 2. Create an alias `dotfiles` so you don't need to type it all over again
 
-   `create an alias dotfilesso you don't need to type it all over again`
+    `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
 
 3. set git status to hide untracked files
 
