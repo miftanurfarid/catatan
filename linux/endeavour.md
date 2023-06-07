@@ -6,8 +6,10 @@
 5. setting alias for exa, bat, trash-cli, fish
 6. setting all application
 7. setting dotfiles from [https://fwuensche.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b](https://fwuensche.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b)
-8. list of dotfiles:
+8. setting alacritty
+9. list of dotfiles:
     1. `~/.config/i3`
     2. /usr/share/X11/xorg.conf.d/70-wacom.conf
     3. .gitconfig
+    4. ~/.config/fish
     3. etc
