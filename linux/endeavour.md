@@ -7,11 +7,15 @@
 6. setting all application
 7. setting dotfiles from [https://fwuensche.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b](https://fwuensche.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b)
 8. setting alacritty
+    1. default terminal
 9. setting nvim
     1. need linesnumber
     2. neet autocompletion
     3. etc
-10. list of dotfiles:
+10. setting fish
+    1. using starship prompt
+    2. etc.
+11. list of dotfiles:
     1. `~/.config/i3`
     2. /usr/share/X11/xorg.conf.d/70-wacom.conf
     3. .gitconfig
