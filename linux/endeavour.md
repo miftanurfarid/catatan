@@ -1,6 +1,6 @@
 # Configuration for Endeavour OS i3wm 
 1. upgrade packages: `sudo pacman -Syu`
-2. install packages: `sudo pacman -S bat neovim fish exa starship libreoffice-still alacritty trash-cli spyder python-pip python-debugpy texlive-bibtexextra texlive-fontsextra texlive-formatsextra texlive-langextra texlive-latexextra texstudio octave htop inkscape gimp xournalpp axel vlc telegram-desktop rclone calibre jupyter-notebook okular jre-openjdk maim xclip xdotool speedtest-cli`
+2. install packages: `sudo pacman -S bat neovim fish exa starship libreoffice-still alacritty tmux trash-cli spyder python-pip python-debugpy texlive-bibtexextra texlive-fontsextra texlive-formatsextra texlive-langextra texlive-latexextra texstudio octave htop inkscape gimp xournalpp axel vlc telegram-desktop rclone calibre jupyter-notebook okular jre-openjdk maim xclip xdotool speedtest-cli`
 3. install packages from AUR: `yay -S zotero zoom brave-bin google-chrome'
 4. setting wacom. read `wacom.md`
 5. setting alias for exa, bat, trash-cli, fish
