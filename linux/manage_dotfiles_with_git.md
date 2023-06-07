@@ -17,3 +17,16 @@
 4. add the alias to `.bashrc` (or `.zshrc`) so you can use it later
 
     `echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc`
+
+## Usage
+
+Now you can use regular git commands such as:
+
+```
+dotfiles status
+dotfiles add .vimrc
+dotfiles commit -m "Add vimrc"
+dotfiles add .bashrc
+dotfiles commit -m "Add bashrc"
+dotfiles push
+```
