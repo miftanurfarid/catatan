@@ -4,7 +4,9 @@
 
 1. Create a `.dotfiles` folder, which we'll use to track your dotfiles
     
-    `git init --bare $HOME/.dotfiles`
+    ```
+    git init --bare $HOME/.dotfiles
+    ```
 
 2. Create an alias `dotfiles` so you don't need to type it all over again
 
