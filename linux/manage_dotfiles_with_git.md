@@ -48,7 +48,7 @@ Make sure to have git installed, then:
 1. clone your github repository
 
     ```
-    git clone --bare https://github.com/USERNAME/dotfiles.git $HOME/.dotfiles
+    git clone --bare git@github.com:miftanurfarid/.dotfiles.git $HOME/.dotfiles
     ```
 
 2. define the alias in the current shell scope
