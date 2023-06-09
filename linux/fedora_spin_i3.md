@@ -4,7 +4,7 @@
 4. `sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
 5. `sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
 6. `sudo dnf upgrade -y --refresh`
-7. `sudo dnf install -y texlive-scheme-full lyx octave python3-spyder htop inkscape texstudio xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley axel neofetch vlc telegram-desktop rclone calibre unrar jupyter-notebook okular texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 neovim bat exa fish polybar rofi pdftk simple-scan git`
+7. `sudo dnf install -y texlive-scheme-full lyx octave python3-spyder htop inkscape texstudio xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley axel neofetch vlc telegram-desktop rclone calibre unrar jupyter-notebook okular texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 neovim bat exa fish polybar rofi pdftk simple-scan git nitrogen`
 8. config git
   ```
   git config --global user.name "miftanurfarid"
@@ -27,3 +27,25 @@
  
   export PS1="\n\[\033[0;31m\][\u]\[\033[0;37m\]:\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n> "
   ```
+11. copy `.config`
+12. copy `/etc/hosts`
+
+# Gruv Fedora
+
+source: [https://www.youtube.com/watch?v=kWRQoLFntQc](https://www.youtube.com/watch?v=kWRQoLFntQc)
+
+packages list:
+1. i3
+2. polybar
+3. alacritty
+
+to do
+1. edit `.config/i3/config`
+  1. change default terminal to alacritty
+  2. change close windows key to super+Q
+  3. delete the bar at the bottom
+  4. mkdir .config/polybar
+  5. cp /etc/polybar/config.ini .config/polybar/
+  6. vim .config/polybar/launch.sh
+    1. read [https://github.com/polybar/polybar/wiki](https://github.com/polybar/polybar/wiki)
+    
