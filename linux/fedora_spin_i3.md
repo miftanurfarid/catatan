@@ -1,3 +1,6 @@
+# Fedora Spin i3WM
+
+## things to do after fresh install
 1. `echo 'fastestmirror=true' | sudo tee -a /etc/dnf/dnf.conf`
 2. `echo 'max_parallel_downloads=5' | sudo tee -a /etc/dnf/dnf.conf`
 3. `echo 'deltarpm=true' | sudo tee -a /etc/dnf/dnf.conf`
@@ -30,7 +33,7 @@
 11. copy `.config`
 12. copy `/etc/hosts`
 
-# Gruv Fedora
+## Gruv Fedora Theme
 
 source: [https://www.youtube.com/watch?v=kWRQoLFntQc](https://www.youtube.com/watch?v=kWRQoLFntQc)
 
@@ -48,4 +51,6 @@ to do
   5. cp /etc/polybar/config.ini .config/polybar/
   6. vim .config/polybar/launch.sh
     1. read [https://github.com/polybar/polybar/wiki](https://github.com/polybar/polybar/wiki)
-    
+
+## Need to watch
+1. [[i3] More rice maturing, quite satisfied with the Neovim config](https://www.reddit.com/r/unixporn/comments/12xcx6j/i3_more_rice_maturing_quite_satisfied_with_the/)
