@@ -7,7 +7,7 @@
 4. `sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
 5. `sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
 6. `sudo dnf upgrade -y --refresh`
-7. `sudo dnf install -y texlive-scheme-full lyx octave python3-spyder htop inkscape texstudio xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley axel neofetch vlc telegram-desktop rclone calibre unrar jupyter-notebook okular texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 neovim bat exa fish polybar rofi pdftk simple-scan git nitrogen help2man`
+7. `sudo dnf install -y texlive-scheme-full lyx octave python3-spyder htop inkscape texstudio xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley axel neofetch vlc telegram-desktop rclone calibre unrar jupyter-notebook okular texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 neovim bat exa fish polybar rofi pdftk simple-scan git nitrogen help2mani arandr`
 8. config git
   ```
   git config --global user.name "miftanurfarid"
@@ -32,6 +32,7 @@
   ```
 11. copy `.config`
 12. copy `/etc/hosts`
+13. setting monitor using arandr
 
 ## Gruv Fedora Theme
 
