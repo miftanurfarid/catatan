@@ -13,6 +13,7 @@
   git config --global user.name "miftanurfarid"
   git config --global user.email "miftanurfarid@gmail.com"
   git config --global init.defaultBranch master
+  git config --global pull.rebase true
   ```
 9. in `/home/$user/.bashrc` add the following line:
   ```
