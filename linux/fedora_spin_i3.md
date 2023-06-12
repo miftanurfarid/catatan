@@ -59,6 +59,8 @@
     5. in `~/.config/i3/config`, change `status_command i3status` into `status_command i3blocks`
     6. go to [ihttps://github.com/vivien/i3blocks-contrib](https://github.com/vivien/i3blocks-contrib)
     7. 
+14. copy `/etc/selinux/config` to disable selinux
+
 ## Gruv Fedora Theme
 
 source: [https://www.youtube.com/watch?v=kWRQoLFntQc](https://www.youtube.com/watch?v=kWRQoLFntQc)
