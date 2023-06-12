@@ -1,0 +1,7 @@
+[user]
+	name = miftanurfarid
+	email = miftanurfarid@gmail.com
+[init]
+	defaultBranch = master
+[pull]
+	rebase = true
