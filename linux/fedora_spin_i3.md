@@ -38,6 +38,7 @@
     1. `git clone git@github.com:Ventto/mons.git --recursive`
     2. `sudo dnf groupinstall "Development Tools"`
     3. `sudo make install`
+15. copy `90-touchpad.conf` to `/etc/X11/xorg.conf.d/` to enable tap for click and natural scrolling
 
 ## Gruv Fedora Theme
 
