@@ -34,7 +34,10 @@
 11. copy `.config`
 12. copy `/etc/hosts`
 13. setting monitor using arandr
-14. install mons
+14. install `mons` from [https://github.com/Ventto/mons](https://github.com/Ventto/mons)
+    1. `git clone git@github.com:Ventto/mons.git --recursive`
+    2. `sudo dnf groupinstall "Development Tools"`
+    3. `sudo make install`
 
 ## Gruv Fedora Theme
 
