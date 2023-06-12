@@ -34,6 +34,7 @@
 11. copy `.config`
 12. copy `/etc/hosts`
 13. setting monitor using arandr
+14. install mons
 
 ## Gruv Fedora Theme
 
