@@ -7,7 +7,7 @@
 4. `sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
 5. `sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
 6. `sudo dnf upgrade -y --refresh`
-7. `sudo dnf install -y texlive-scheme-full lyx octave python3-spyder htop inkscape texstudio xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley axel neofetch vlc telegram-desktop rclone calibre unrar jupyter-notebook okular texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 neovim bat exa fish polybar rofi pdftk simple-scan git evince help2man arandr maim xclip xdotool google-noto-emoji-color-fonts google-noto-emoji-fonts texlive-noto-emoji `
+7. `sudo dnf install -y texlive-scheme-full lyx octave python3-spyder htop inkscape texstudio xournalpp qpdfview-qt5 gimp texlive-IEEEtran libreoffice-Mendeley axel neofetch vlc telegram-desktop rclone calibre unrar jupyter-notebook okular texlive-babel-bahasa texlive-lipsum texlive-extarrows btrfs-assistant transmission xorg-x11-font-utils redhat-lsb-core gstreamer1-plugin-openh264 mozilla-openh264 neovim bat exa fish polybar rofi pdftk simple-scan git evince help2man arandr maim xclip xdotool google-noto-emoji-color-fonts google-noto-emoji-fonts texlive-noto-emoji trash-cli`
 8. config git
   ```
   git config --global user.name "miftanurfarid"
@@ -39,6 +39,7 @@
     2. `sudo dnf groupinstall "Development Tools"`
     3. `sudo make install`
 15. copy `90-touchpad.conf` to `/etc/X11/xorg.conf.d/` to enable tap for click and natural scrolling
+16. `sudo cp -v nobeep.conf /etc/modprode.d/`
 
 ## Gruv Fedora Theme
 
