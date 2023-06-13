@@ -183,7 +183,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Border
-default_border pixel 1
+#default_border pixel 3
 
 # class                 border  bground text    indicator child_border
 client.focused          #83CAFA #51A2DA #FFFFFF #83CAFA   #51A2DA
