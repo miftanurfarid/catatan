@@ -57,7 +57,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+b exec firefox
 
 # start a file manager
-bindsym $mod+n exec thunar
+bindsym $mod+n exec pcmanfm
 
 # kill focused window
 bindsym $mod+q kill
