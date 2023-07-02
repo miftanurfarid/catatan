@@ -19,7 +19,9 @@
 16. `sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc`
 17. `sudo dnf install -y brave-browser`
 18. `sudo dnf install -y https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm`
-19. config git
+19. `sudo dnf install flatpak`
+20. `flatpak install -y flathub com.wps.Office`
+21. config git
   ```
   git config --global user.name "miftanurfarid"
   git config --global user.email "miftanurfarid@gmail.com"
