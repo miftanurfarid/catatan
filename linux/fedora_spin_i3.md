@@ -44,8 +44,7 @@
  
   export PS1="\n\[\033[0;31m\][\u]\[\033[0;37m\]:\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n> "
   ```
-11. copy `.config`
-12. copy `/etc/hosts`
+11. update `/etc/hosts`
 13. setting monitor using arandr
 14. install `mons` from [https://github.com/Ventto/mons](https://github.com/Ventto/mons)
     1. `git clone git@github.com:Ventto/mons.git --recursive`
@@ -53,14 +52,6 @@
     3. `sudo make install`
 15. copy `90-touchpad.conf` to `/etc/X11/xorg.conf.d/` to enable tap for click and natural scrolling
 16. `sudo cp -v nobeep.conf /etc/modprode.d/`
-17. doing `i3blocks`. this will replace `i3status`.
-    1. `git clone https://github.com/Airblader/i3blocks-gaps i3blocks`
-    2. `cd i3blocks`
-    3. `make clean all`
-    4. `sudo make install`
-    5. in `~/.config/i3/config`, change `status_command i3status` into `status_command i3blocks`
-    6. go to [ihttps://github.com/vivien/i3blocks-contrib](https://github.com/vivien/i3blocks-contrib)
-    7. 
 14. copy `/etc/selinux/config` to disable selinux
 
 ## Gruv Fedora Theme
