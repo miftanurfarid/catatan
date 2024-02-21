@@ -22,7 +22,7 @@ sudo apt install brave-browser
 3. install necessary packages
 
 ```
-sudo apt-get install fish bat trash-cli texlive-full lyx htop xournalpp axel neofetch vlc telegram-desktop rclone calibre alacritty
+sudo apt-get install fish bat exa trash-cli texlive-full lyx htop xournalpp axel neofetch vlc telegram-desktop rclone calibre alacritty
 ```
 
 4. install miniconda
