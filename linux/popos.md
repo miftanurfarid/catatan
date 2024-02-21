@@ -2,9 +2,10 @@ Things to do after install Pop-Os!
 
 1. Update
 
-`sudo apt-get update`
-
-`sudo apt-get upgrade`
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
 
 2. install brave browser
 
