@@ -22,7 +22,7 @@ sudo apt install brave-browser
 3. install necessary packages
 
 ```
-sudo apt-get install fish bat trash-cli texlive-full lyx htop xournalpp axel neofetch vlc telegram-desktop rclone calibre 
+sudo apt-get install fish bat trash-cli texlive-full lyx htop xournalpp axel neofetch vlc telegram-desktop rclone calibre alacritty
 ```
 
 4. install miniconda
@@ -34,3 +34,24 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init fish
 ```
+
+5. install visual studio code
+
+```
+wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+sudo dpkg -i code*_amd64.deb
+
+```
+
+6. install zoom meeting
+
+```
+wget https://zoom.us/client/5.17.5.2543/zoom_amd64.deb
+sudo dpkg -i zoom_amd64.deb
+sudo apt-get --fix-broken install
+
+```
+
+7. install pycharm
+
+8. install zotero
