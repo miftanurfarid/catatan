@@ -71,3 +71,9 @@ sudo bash /opt/zotero/set_launcher_icon
 ln -s /opt/zotero/zotero.desktop ~/.local/share/applications/zotero.desktop
 ```
 
+9. setting git
+```
+git config --global user.email "miftanurfarid@gmail.com"
+git config --global user.name "miftanurfarid"
+```
+
