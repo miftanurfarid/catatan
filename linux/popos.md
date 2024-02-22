@@ -38,8 +38,8 @@ rm -rf ~/miniconda3/miniconda.sh
 5. install visual studio code
 
 ```
-wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
-sudo dpkg -i code*_amd64.deb
+wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' -O code_amd64.deb
+sudo dpkg -i code_amd64.deb
 
 ```
 
@@ -54,4 +54,20 @@ sudo apt-get --fix-broken install
 
 7. install pycharm
 
+```
+wget https://download.jetbrains.com/python/pycharm-community-2023.3.3.tar.gz
+tar -xzvf pycharm-community-2023.3.3.tar.gz
+sudo bash pycharm-community-2023.3.3/bin/pycharm.sh
+rm -r pycharm-community*
+```
+
 8. install zotero
+
+```
+wget 'https://www.zotero.org/download/client/dl?channel=release&platform=linux-x86_64&version=6.0.30' -O zotero.tar.bz2
+tar -xvf zotero.tar.bz2
+sudo mv Zotero_linux-x86_64 /opt/zotero
+sudo bash /opt/zotero/set_launcher_icon
+ln -s /opt/zotero/zotero.desktop ~/.local/share/applications/zotero.desktop
+```
+
