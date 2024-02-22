@@ -22,7 +22,7 @@ sudo apt install brave-browser
 3. install necessary packages
 
 ```
-sudo apt-get install fish bat exa trash-cli texlive-full lyx htop xournalpp axel neofetch vlc telegram-desktop calibre alacritty gimp inkscape
+sudo apt-get install fish bat exa trash-cli texlive-full lyx htop xournalpp axel neofetch vlc telegram-desktop calibre alacritty gimp inkscape neovim plocate
 ```
 
 4. install miniconda
@@ -77,3 +77,10 @@ git config --global user.email "miftanurfarid@gmail.com"
 git config --global user.name "miftanurfarid"
 ```
 
+10. install packet tracer
+
+11. setting neovim
+
+```
+https://vim.fisadev.com/
+```
