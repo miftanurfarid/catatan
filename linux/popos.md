@@ -82,3 +82,15 @@ git config --global user.name "miftanurfarid"
 ```
 https://vim.fisadev.com/
 ```
+
+12. docker
+
+```
+https://docs.docker.com/engine/install/ubuntu/
+```
+
+13. onedrive
+
+```
+https://github.com/abraunegg/onedrive/blob/master/docs/Docker.md
+```
