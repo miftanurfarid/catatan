@@ -14,15 +14,13 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
-sudo apt update
-
-sudo apt install brave-browser
+sudo apt update && sudo apt install brave-browser -y
 ```
 
 3. install necessary packages
 
 ```
-sudo apt-get install fish bat exa trash-cli texlive-full lyx htop xournalpp axel neofetch vlc telegram-desktop calibre alacritty gimp inkscape neovim plocate
+sudo apt-get install fish bat exa trash-cli texlive-full lyx htop xournalpp axel neofetch vlc telegram-desktop calibre alacritty gimp inkscape neovim plocate -y
 ```
 
 4. install miniconda
